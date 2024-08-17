@@ -218,8 +218,10 @@ export default function Dashboard() {
           <Reports/>
           </Grid>
         </Grid>
+        <Box container sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:{xs:"flex-start",md:"center"},alignItems:"center" }}>
         <Linechart/>
         <ExpenseCard/>
+          </Box>
       </Box>
     </Box>
   );
