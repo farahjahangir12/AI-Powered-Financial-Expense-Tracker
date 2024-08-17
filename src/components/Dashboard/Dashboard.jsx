@@ -23,7 +23,7 @@ import ExpenseCard from './ExpenseCard';
 import DownloadFile from './DownloadFile';
 import Reports from './Reports';
 import Barchart from './Barchart';
-import Linechart from './LineChart';
+import Linechart from './Linechart';
 import Balance from './Balance';
 import Cards from './Cards';
 
@@ -98,7 +98,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
-export default function Menu() {
+export default function Dashboard() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
