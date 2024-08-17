@@ -218,7 +218,8 @@ export default function Dashboard() {
           <Reports/>
           </Grid>
         </Grid>
-        
+        <Linechart/>
+        <ExpenseCard/>
       </Box>
     </Box>
   );
