@@ -196,7 +196,7 @@ export default function Dashboard() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <Grid container spacing={4} columns={30} sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:'center',alignItems:"center",marginBottom:2 }}>
+        <Grid container spacing={4} columns={30} sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:{xs:"flex-start",md:"center"},alignItems:"center",marginBottom:2 }}>
           <Grid item xs={15} md={8}>
             <Balance/>
           </Grid>
@@ -207,7 +207,7 @@ export default function Dashboard() {
           <Insight content="Engagement" />
           </Grid>
         </Grid>
-        <Grid container spacing={4} columns={30} sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:'center',alignItems:"center" }}>
+        <Grid container spacing={4} columns={30} sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:{xs:"flex-start",md:"center"},alignItems:"center" }}>
           <Grid item xs={15} md={8}>
            <Barchart/>
           </Grid>
@@ -218,6 +218,10 @@ export default function Dashboard() {
           <Reports/>
           </Grid>
         </Grid>
+        <Box sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:{xs:"flex-start",md:"center"},alignItems:"center" }}>
+          <ExpenseCard/>
+          <Linechart/>
+          </Box>
       </Box>
     </Box>
   );
