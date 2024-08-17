@@ -218,7 +218,7 @@ export default function Dashboard() {
           <Reports/>
           </Grid>
         </Grid>
-        <Box container sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:{xs:"flex-start",md:"center"},alignItems:"center" }}>
+        <Box container sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:{xs:"flex-start",md:"between"},gap:2}}>
         <Linechart/>
         <ExpenseCard/>
           </Box>
