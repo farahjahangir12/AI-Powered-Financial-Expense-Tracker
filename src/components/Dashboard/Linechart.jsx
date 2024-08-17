@@ -14,7 +14,7 @@ const xLabels = [
 export default function Linechart() {
   return (
     <LineChart
-      width={500}
+      width={300}
       height={300}
       series={[{ data: uData, label: 'Predictive Expenditure', area: true, showMark: false }]}
       xAxis={[{ scaleType: 'point', data: xLabels, labelStyle:{color:"white"}}]}
