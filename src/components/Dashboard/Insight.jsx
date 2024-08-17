@@ -14,7 +14,7 @@ const StyledPaper = styled(Paper)(({ theme}) => ({
 function Insight() {
   const theme=useTheme();
   return (
-    <StyledPaper sx={{background:"linear-gradient(45deg,#FFDCB6,#FFDBC3)",color:theme.palette.primary.main,width:"250px", height:"150px"}}>
+    <StyledPaper sx={{background:"linear-gradient(45deg, #7BC9FF 30%, #A3FFD6 90%)",color:theme.palette.primary.main,width:"250px", height:"150px"}}>
       <StarIcon />
       <StarIcon />
       <StarBorderIcon />
