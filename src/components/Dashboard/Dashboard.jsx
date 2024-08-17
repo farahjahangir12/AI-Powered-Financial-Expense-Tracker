@@ -196,7 +196,7 @@ export default function Dashboard() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <Grid container spacing={4} columns={30} sx={{ display:"flex",flexDirection:{sm:"column",md:"row"},justifyContent:'center',alignItems:"center",marginBottom:2 }}>
+        <Grid container spacing={4} columns={30} sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:'center',alignItems:"center",marginBottom:2 }}>
           <Grid item xs={30} md={8}>
             <Balance/>
           </Grid>
@@ -207,7 +207,7 @@ export default function Dashboard() {
           <Insight content="Engagement" />
           </Grid>
         </Grid>
-        <Grid container spacing={4} columns={30} sx={{ display:"flex",flexDirection:{sm:"column",md:"row"},justifyContent:'center',alignItems:"center" }}>
+        <Grid container spacing={4} columns={30} sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:'center',alignItems:"center" }}>
           <Grid item xs={15} md={8}>
            <Barchart/>
           </Grid>
@@ -218,11 +218,11 @@ export default function Dashboard() {
           <Reports/>
           </Grid>
         </Grid>
-        <Grid container spacing={2} colmns={30} sx={{ display:"flex",flexDirection:{sm:"column",md:"row"},justifyContent:'center',alignItems:"center" }}>
-        <Grid item xs={15} md={7}>
+        <Grid container spacing={2} colmns={30} sx={{ display:"flex",flexDirection:{xs:"column",md:"row"},justifyContent:'center',alignItems:"center" }}>
+        <Grid item xs={15} md={16}>
           <Linechart/>
        </Grid>
-      <Grid item xs={15} md={3}>
+      <Grid item xs={15} md={8}>
       <ExpenseCard/>
       </Grid>
       </Grid>
